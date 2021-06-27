@@ -6,3 +6,7 @@ sentence="恥の多い生涯を送って来ました。自分には、人間の�
 
 curl -X POST -H "Content-Type: application/json" -d "{\"sentense\":\"${sentence}\"}" localhost:8080/api/v1/tokenize
 
+
+curl -X POST -H "Content-Type: application/json" -d "{\"sentense\":\"${sentence}\"}" lindera-api-cluster.example:8080/api/v1/tokenize
+
+
