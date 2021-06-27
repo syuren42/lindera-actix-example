@@ -1,7 +1,6 @@
 locals {
- subnet_ids = ["subnet-0baf4bc02a1f50d0c"]
- security_group_ids = ["sg-08a4691b4cda2314c"]
-  
+ subnet_ids = ["YOUR SUBNET"]
+ security_group_ids = ["YOUR SECURITY GROUP ID"]
 }
 
 resource "aws_lambda_function" "front_service" {
