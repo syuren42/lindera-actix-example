@@ -26,7 +26,7 @@ async fn echo(input: web::Json<InputSentense>) -> impl Responder {
     let tokens = tokenizer.tokenize(&input.sentense);
     let mut results_tokens = "".to_string() ;
     for token in tokens {
-        println!("{}", token.detail[0]);
+        //println!("{}", token.detail[0]);
 
         if token.detail[0].eq("名詞"){
             results_tokens.push_str(token.text);
@@ -49,8 +49,8 @@ async fn main() -> std::io::Result<()> {
             .service(health)
             .service(echo)
     })
-    .bind("127.0.0.1:8080")?
-    .workers(1024) 
+    .bind("0.0.0.0:8080")?
+    .workers(32) 
     .run()
     .await
 }
