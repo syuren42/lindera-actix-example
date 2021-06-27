@@ -47,7 +47,7 @@ resource "aws_subnet" "public_c" {
 #####################################
 
 resource "aws_internet_gateway" "research-vpc-igw" {
-  vpc_id = "${aws_vpc.research-vpc.id}"
+  vpc_id = aws_vpc.research-vpc.id
 }
 
 
