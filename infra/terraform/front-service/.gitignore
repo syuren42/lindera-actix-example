@@ -1,6 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
 
+lambda.tf
 build
 
 front_service.zip
