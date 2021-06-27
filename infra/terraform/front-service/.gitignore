@@ -8,7 +8,7 @@ front_service.zip
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+.terraform.lock.hcl
 mykey
 mykey.pub
 aws.tfvars
