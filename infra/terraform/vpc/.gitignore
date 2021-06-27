@@ -2,8 +2,11 @@
 **/.terraform/*
 
 # .tfstate files
+.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
+
+.terraform.lock.hcl
 
 mykey
 mykey.pub
